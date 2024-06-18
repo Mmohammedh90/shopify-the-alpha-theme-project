@@ -1,0 +1,23 @@
+{
+  "name": "shopify-the-alpha-theme-project",
+  "version": "1.0.0",
+  "description": "A new custome made theme for shopify stores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "shopify-the-alpha-theme-project"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "the-alpha"
+  ],
+  "author": "Moustafa Hassanin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
+}
