@@ -1,0 +1,13 @@
+{% assign _heroarea_banner = section.settings.hero_main_image %}
+
+<div class="home_heroarea">
+  <div class="banner">
+    <img
+      src="{{ _heroarea_banner | image_url }}"
+      alt="{{ 'general.text.heroarea_img_alt' | t }}"
+      width="120%"
+      height="auto"
+    >
+  </div>
+  <div class="caption"></div>
+</div>

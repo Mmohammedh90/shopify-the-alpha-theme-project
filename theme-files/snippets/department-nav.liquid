@@ -1,0 +1,38 @@
+{% assign _all_departments = section.settings.alldep_title %}
+
+<div class="department_nav">
+  <div class="menu_banner">
+    <p>{{ _all_departments }}</p>
+    <span class="icon"><i class="fa-solid fa-list-ul"></i></span>
+  </div>
+  <div class="sub_menu_main" style="opacity: 1; display:none">
+    <ul class="menu">
+      {% for link in section.settings.departments_menu_id.links %}
+        <li class="menu-link">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+
+          {% if link.links.size > 0 %}
+            <span class="caret_symbol"><i class="fa-light fa-angle-right"></i></span>
+            <ul class="menu dropdown-child hide_child">
+              {% for child_link in link.links %}
+                <li class="menu-link">
+                  <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                  {% if child_link.links.size > 0 %}
+                    <ul class="menu dropdown-grandchild hide_grandchild">
+                      {% for grandchild_link in child_link.links %}
+                        <li class="menu-link">
+                          <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

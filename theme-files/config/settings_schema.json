@@ -1,0 +1,387 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "The Alpha Theme",
+    "theme_author": "Moustafa Hassanin",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https:\/\/api.whatsapp.com\/send?phone=201210448863",
+    "theme_support_url": "https:\/\/api.whatsapp.com\/send?phone=201210448863"
+  },
+  {
+    "name": "Welcome, to ..The Alpha Theme",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Thank You!",
+        "info": "We would just like to say thank you for being a part of our family."
+      },
+      {
+        "type": "paragraph",
+        "content": "[You can find guides, online docs, videos, and tutorials to simplify and enhance your experience. Reach out on WhatsApp at +201210448863 for assistance.](https:\/\/api.whatsapp.com\/send?phone=201210448863)."
+      }
+    ]
+  },
+  {
+    "name": "Development Tools",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "development_mode",
+        "label": "Enable Development Mode",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "development_mode_text",
+        "label": "Text To Show"
+      }
+    ]
+  },
+  {
+    "name": "General Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Favicon"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon"
+      },
+      {
+        "type": "header",
+        "content": "Performance"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_lazyload",
+        "label": "Enable Lazy loading images",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Preloader",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "preloader_enable",
+        "label": "Enable Preloader",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "preloader_stuck",
+        "label": "Make Preloader Stuck",
+        "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_en",
+        "label": "English Logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_ar",
+        "label": "Arabic Logo"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "label": "Desktop Logo Width",
+        "default": 180,
+        "min": 100,
+        "max": 500,
+        "step": 5,
+        "unit": "px"
+      },
+      {
+        "type": "text",
+        "id": "pre_text",
+        "label": "Preloader Text"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Background Colors"
+      },
+      {
+        "type": "color",
+        "id": "bkgnd_color_1",
+        "label": "Background Color 1"
+      },
+      {
+        "type": "color",
+        "id": "bkgnd_color_2",
+        "label": "Background Color 2"
+      },
+      {
+        "type": "header",
+        "content": "Bars Colors"
+      },
+      {
+        "type": "color",
+        "id": "bar_color_1",
+        "label": "Bar Color 1"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Font Family"
+      },
+      {
+        "type": "font_picker",
+        "id": "header_font_1",
+        "default": "open_sans_n4",
+        "label": "Header Font Family"
+      },
+      {
+        "type": "font_picker",
+        "id": "general_font_1",
+        "default": "open_sans_n4",
+        "label": "Body Font Family"
+      },
+      {
+        "type": "header",
+        "content": "Font Size"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_1",
+        "label": "Heading 1",
+        "default": 36,
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_2",
+        "label": "Heading 2",
+        "default": 30,
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_3",
+        "label": "Heading 3",
+        "default": 22,
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_4",
+        "label": "Heading 4",
+        "default": 18,
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_5",
+        "label": "Heading 5",
+        "default": 16,
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "heading_size_6",
+        "label": "Heading 6",
+        "default": 14,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "body_font_size",
+        "label": "Body",
+        "default": 14,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "top_bar_size",
+        "label": "Top Bar",
+        "default": 13,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "product_title_size",
+        "label": "Product item title",
+        "default": 14,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "product_price_size",
+        "label": "Product item price",
+        "default": 20,
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "product_detail_title_size",
+        "label": "Product title",
+        "default": 25,
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "nav_size",
+        "label": "Navigation",
+        "default": 14,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "nav_sub_size",
+        "label": "Navigation dropdown",
+        "default": 14,
+        "min": 10,
+        "max": 20,
+        "step": 1,
+        "unit": "px"
+      }
+    ]
+  },
+  {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "announce_bar",
+        "label": "enable announcement bar?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "bar_p",
+        "label": "Bar Content"
+      },
+      {
+        "type": "url",
+        "id": "announce_bar_link",
+        "label": "Bar link"
+      },
+      {
+        "type": "color",
+        "id": "anounce_bar_color",
+        "label": "Bar bg Color"
+      },
+      {
+        "type": "color",
+        "id": "anounce_bar_textcolor",
+        "label": "Bar text Color"
+      },
+      {
+        "type": "range",
+        "id": "anounce_bar_fontsize",
+        "label": "Bar Font Size",
+        "min": 1,
+        "max": 80,
+        "step": 1,
+        "default": 18,
+        "unit": "px"
+      },
+      {
+        "type": "checkbox",
+        "id": "bar_content_bold",
+        "label": "Bar Content Bold",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "bar_content_center",
+        "label": "Bar Content Center",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "Wishlist",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable-wishlist",
+        "label": "Enable Wishlist",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "wishlist-floating-button-position",
+        "label": "Enable Floating Button",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "floating_button-position",
+        "options": [
+          {
+            "value": "middle-left",
+            "label": "Middle Left"
+          },
+          {
+            "value": "middle-right",
+            "label": "Middle Right"
+          },
+          {
+            "value": "bottom-left",
+            "label": "Bottom Left"
+          },
+          {
+            "value": "bottom-center",
+            "label": "Bottom Center"
+          },
+          {
+            "value": "bottom-right",
+            "label": "Bottom Right"
+          }
+        ],
+        "default": "middle-right",
+        "label": "Floating Button Position"
+      }
+    ]
+  }
+]

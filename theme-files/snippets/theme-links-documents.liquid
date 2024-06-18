@@ -1,0 +1,42 @@
+<script src="{{ 'jquery-3.5.min.js' | asset_url }}" defer="defer"></script>
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+{% comment %}
+  {{ 'all.min.css' | asset_url | stylesheet_tag }}
+{% endcomment %}
+<link
+  rel="stylesheet"
+  data-purpose="Layout StyleSheet"
+  title="Web Awesome"
+  href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+>
+
+{{ 'a-theme-en-styles.css' | asset_url | stylesheet_tag }}
+
+{% if shop.locale == 'ar' %}
+  {{ 'a-theme-ar-styles.css' | asset_url | stylesheet_tag }}
+{% endif %}

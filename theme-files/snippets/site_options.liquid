@@ -1,0 +1,72 @@
+{% assign _site_option_position_en = section.settings.optionpos_en %}
+{% assign _site_option_position_ar = section.settings.optionpos_ar %}
+
+<style>
+  html[lang=en] .site_options {
+    left: {{ _site_option_position_en }}em;
+  }
+
+  html[lang=ar] .site_options {
+    right: {{ _site_option_position_ar }}em;
+  }
+</style>
+
+<div class="switch-language">
+  <ul>
+    <li>
+      <a href="#"><span id="language_set"></span> <i class="fa-light fa-angle-down"></i></a>
+      <ul class="dropdown_menu hide_element">
+        <li id="switch_to_english">
+          <a href="#">EN </a>
+        </li>
+        <li id="switch_to_arabic">
+          <a href="#">AR</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="switch-currency">
+  <ul>
+    <li>
+      <a href="#"><span id="currency_set"></span><i class="fa-light fa-angle-down"></i></a>
+      <ul class="dropdown_menu hide_element">
+        <li id="switch_to_usd">
+          <a href="#">usd</a>
+        </li>
+        <li id="switch_to_eur">
+          <a href="#">eur</a>
+        </li>
+        <li id="switch_to_egp">
+          <a href="#">egp</a>
+        </li>
+        <li id="switch_to_sar">
+          <a href="#">sar</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="user_account">
+  <a href="/account">
+    <span>
+      <i class="fa-light fa-user"></i>
+    </span>
+  </a>
+</div>
+<div class="user_wishlist" id="wishlist">
+  <a href="#">
+    <span>
+      <i class="fa-light fa-heart"></i>
+    </span>
+    <span class="wishlist_count">0</span>
+  </a>
+</div>
+<div class="shopping_cart">
+  <span class="icon">
+    <i class="fa-light fa-bag-shopping"></i>
+  </span>
+  <span class="cart_items_count">0</span>
+  <span class="totalprice"> $ 12.055 </span>
+</div>
+{% render 'wishlist_popup' %}

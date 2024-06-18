@@ -1,0 +1,33 @@
+<div class="mobile_slide_menu">
+  <div class="overlay hide"></div>
+  <div class="content hide">
+    <div class="container">
+      <div class="row slide_menu_header">
+        <div class="col menu_head_left">
+          <span class="cls_btn" id="cls_mobile_menu">
+            <i class="fa-solid fa-x"></i>
+          </span>
+        </div>
+        <div class="col menu_head_right">
+          <div class="user_wishlist" id="wishlist">
+            <a href="#">
+              <span>
+                <i class="fa-light fa-heart"></i>
+              </span>
+              <span class="wishlist_count">0</span>
+            </a>
+          </div>
+          <div id="english_switch_mobile" class="sw_lang">EN</div>
+          <div id="arabic_switch_mobile" class="sw_lang">AR</div>
+        </div>
+      </div>
+      <div class="row slide_menu_body">
+        <div class="col">
+          {% render 'slide_menu_mobile_navbar' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% render 'wishlist_popup' %}

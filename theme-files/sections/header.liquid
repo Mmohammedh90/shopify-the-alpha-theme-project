@@ -1,0 +1,152 @@
+{% render 'header-snippet' %}
+
+{% schema %}
+{
+  "name": "header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header Style"
+    },
+    {
+      "type": "select",
+      "id": "header_style",
+      "label": "Choose Header Style",
+      "info": "Only Style Number '1' is working for now",
+      "options": [
+        {
+          "value": "1",
+          "label": "Style #1"
+        },
+        {
+          "value": "2",
+          "label": "Style #2"
+        },
+        {
+          "value": "3",
+          "label": "Style #3"
+        },
+        {
+          "value": "4",
+          "label": "Style #4"
+        },
+        {
+          "value": "5",
+          "label": "Style #5"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "en_desktop_logo",
+      "label": "(EN) Logo For Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "ar_desktop_logo",
+      "label": "(AR) Logo For Desktop"
+    },
+    {
+      "type": "range",
+      "id": "desktop_logo_width",
+      "label": "Desktop Logo Width",
+      "default": 180,
+      "min": 100,
+      "max": 500,
+      "step": 5,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "en_mobile_logo",
+      "label": "(EN) Logo For Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "ar_mobile_logo",
+      "label": "(AR) Logo For Mobile"
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_width",
+      "label": "Mobile Logo Width",
+      "default": 80,
+      "min": 50,
+      "max": 400,
+      "step": 5,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Departments Menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "department_menu",
+      "label": "Enable Departments menu?",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "alldep_title",
+      "label": "All Departments Title"
+    },
+    {
+      "type": "link_list",
+      "id": "departments_menu_id",
+      "label": "Departments Menu"
+    },
+    {
+      "type": "header",
+      "content": "Navigation Bar"
+    },
+    {
+      "type": "link_list",
+      "id": "nav_bar_id",
+      "label": "Navigation Bar Menu"
+    },
+    {
+      "type": "header",
+      "content": "Navigation Bar (Mobile)"
+    },
+    {
+      "type": "link_list",
+      "id": "nav_bar_id_mobile",
+      "label": "Navigation Bar Menu"
+    },
+    {
+      "type": "header",
+      "content": "Site Options"
+    },
+    {
+      "type": "range",
+      "id": "optionpos_en",
+      "label": "Site Options position (EN)",
+      "default": 1,
+      "min": 0,
+      "max": 30,
+      "step": 0.5,
+      "unit": "em"
+    },
+    {
+      "type": "range",
+      "id": "optionpos_ar",
+      "label": "Site Options position (AR)",
+      "default": 1,
+      "min": 0,
+      "max": 30,
+      "step": 0.5,
+      "unit": "em"
+    }
+  ]
+}
+{% endschema %}

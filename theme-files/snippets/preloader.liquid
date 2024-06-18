@@ -1,0 +1,31 @@
+{% assign _logo_en = settings.logo_en %}
+{% assign _logo_ar = settings.logo_ar %}
+{% assign _logo_wdth = settings.logo_width %}
+{% assign _preloader_text = settings.pre_text %}
+
+<div id="preloader">
+  <div class="logo">
+    {% if shop.locale == 'en' %}
+      <img
+        src=" {{ _logo_en | image_url }}"
+        alt="preloader"
+        width="{{ _logo_wdth }}px"
+        height="auto"
+      >
+    {% else %}
+      <img
+        src=" {{ _logo_ar | image_url }}"
+        alt="preloader"
+        width="{{ _logo_wdth }}px"
+        height="auto"
+      >
+    {% endif %}
+  </div>
+  <div class="ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <p>{{ _preloader_text }}</p>
+</div>

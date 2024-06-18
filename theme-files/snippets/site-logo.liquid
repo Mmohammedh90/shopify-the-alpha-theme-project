@@ -1,0 +1,50 @@
+{% assign _logo_desktop_en = section.settings.en_desktop_logo %}
+{% assign _logo_desktop_ar = section.settings.ar_desktop_logo %}
+
+{% assign _logo_mobile_en = section.settings.en_mobile_logo %}
+{% assign _logo_mobile_ar = section.settings.ar_mobile_logo %}
+
+{% assign _logo_desktop_width = section.settings.desktop_logo_width %}
+{% assign _logo_mobile_width = section.settings.mobile_logo_width %}
+
+{% if shop.locale == 'en' %}
+  <div class="logo-desktop">
+    <a href="{{ shop.url }}">
+      <img
+        src=" {{ _logo_desktop_en | image_url }}"
+        alt="{{ seo_title | strip }}"
+        width="{{ _logo_desktop_width }}px"
+        height="auto"
+      >
+    </a>
+  </div>
+  <div class="logo-mobile">
+    <a href="{{ shop.url }}">
+      <img
+        src=" {{ _logo_mobile_en | image_url }}"
+        alt="{{ seo_title | strip }}"
+        width="{{ _logo_mobile_width }}px"
+        height="auto"
+      >
+    </a>
+  </div>
+{% elsif shop.locale == 'ar' %}
+  <div class="logo-desktop">
+    <img
+      src=" {{ _logo_desktop_ar | image_url }}"
+      alt="{{ seo_title | strip }}"
+      width="{{ _logo_desktop_width }}px"
+      height="auto"
+    >
+  </div>
+  <div class="logo-mobile">
+    <a href="{{ shop.url }}">
+      <img
+        src=" {{ _logo_mobile_ar | image_url }}"
+        alt="{{ seo_title | strip }}"
+        width="{{ _logo_mobile_width }}px"
+        height="auto"
+      >
+    </a>
+  </div>
+{% endif %}
