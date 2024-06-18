@@ -17,5 +17,8 @@
     "the-alpha"
   ],
   "author": "Moustafa Hassanin",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  }
 }
