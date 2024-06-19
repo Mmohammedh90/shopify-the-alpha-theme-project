@@ -24,22 +24,6 @@ export const css = () => gulp
 .pipe(gulp.dest('theme-files/assets'))
 .pipe(browserSync.stream());
 
-export const css_ar = () => gulp
-.src('styles/main-ar.scss')
-.pipe(sass().on('error', sass.logError))
-.pipe(concat('test-ar.css.liquid'))
-.pipe(prefix('last 2 version'))
-.pipe(replace('/*!#','/*'))
-.pipe(gulp.dest('test'))
-.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-.pipe(replace('"\{\{', '{{'))
-.pipe(replace('\}\}"', '}}'))
-.pipe(concat('a--main-ar.min.css.liquid'))
-.pipe(replace('/*!--',''))
-.pipe(replace('--*/',''))
-.pipe(gulp.dest('theme-files/assets'))
-.pipe(browserSync.stream());
-
 export const fontawesome = () => gulp
 .src('styles/font-awesome-pro.scss')
 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -55,8 +39,7 @@ export const server = () => {
         notify:true
     });
     gulp.watch('styles/**/*.scss', css);
-    gulp.watch('styles/**/*.scss', css_ar);
     gulp.watch('styles/**/*.scss', fontawesome);
 }
 
-export default gulp.series(css, css_ar, fontawesome, server);
+export default gulp.series(css, fontawesome, server);
